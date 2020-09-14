@@ -11,19 +11,16 @@
       </div>
 
       <div class="block lg:hidden pr-4">
-        <button id="nav-toggle" class="flex items-center p-1 text-orange-800 hover:text-gray-900">
-          <svg class="fill-current h-6 w-6" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
+        <button @click="toggleNav" class="flex items-center p-1">
+          <i :class="navOpen ? 'fa fa-times' : 'fas fa-ellipsis-v'" class="text-2xl text-lightblue"></i>
         </button>
       </div>
 
       <div
-        class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 p-4 lg:p-0 z-20"
-        id="nav-content"
+        :class="navOpen ? '' : 'hidden'"
+        class="w-full flex-grow lg:flex lg:items-center lg:w-auto mt-2 lg:mt-0 p-4 lg:p-0 z-20"
       >
-        <ul class="list-reset lg:flex justify-end flex-1 items-center">
+        <ul class="list-reset lg:flex justify-end flex-1 items-center text-center">
           <li v-for="route in routes" :key="route.name" class="mr-3">
             <router-link
               tag="a"
@@ -46,6 +43,16 @@ export default {
     return {
       routes,
     };
+  },
+  computed: {
+    navOpen() {
+      return this.$store.getters.navOpen;
+    },
+  },
+  methods: {
+    toggleNav() {
+      this.$store.commit("toggleNav");
+    },
   },
 };
 </script>

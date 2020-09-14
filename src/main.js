@@ -1,16 +1,15 @@
-import { createApp } from "vue";
+import Vue from "vue";
 import App from "./App.vue";
 import "./registerServiceWorker";
 import router from "./router";
 import store from "./store";
 
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faExternalLinkAlt, faLink } from "@fortawesome/free-solid-svg-icons";
+import VueI18n from 'vue-i18n'
+import i18n from './i18n'
 
-library.add(faGithub, faExternalLinkAlt, faLink);
-
-createApp(App)
+Vue.createApp(App)
   .use(store)
   .use(router)
+  .use(VueI18n)
+  .use(i18n)
   .mount("#app");

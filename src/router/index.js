@@ -7,7 +7,7 @@ import Kontakt from '../views/Kontakt.vue'
 const routes = [
   {
     path: "/",
-    name: "Home",
+    name: "Strona Główna",
     component: Home,
   },
   {
@@ -16,15 +16,16 @@ const routes = [
     component: Repos
   },
   {
-  path: '/kontakt',
-  name: 'Kontakt',
-  component: Kontakt 
+    path: '/kontakt',
+    name: 'Kontakt',
+    component: Kontakt
   }
 ];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  linkActiveClass: 'active'
 });
 
 export default router;

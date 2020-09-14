@@ -18,6 +18,9 @@ body {
 .gradient {
   background: $gradient;
 }
+i:focus {
+  outline: none;
+}
 </style>
 
 <script>
@@ -25,11 +28,17 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import "./assets/tailwind.css";
+import "@fortawesome/fontawesome-free/css/all.css";
 
 export default {
   components: {
     Header,
     Footer,
+  },
+  mounted() {
+    this.$router.afterEach(() => {
+      this.$store.commit("closeNav");
+    });
   },
 };
 </script>

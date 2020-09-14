@@ -8,12 +8,12 @@
     >
       <div class="p-5 border rounded-t-lg">
         <a :href="repo.repo_url" class="max-w-md flex justify-between">
-          <FontAwesomeIcon :icon="['fab', 'github']" class="my-auto" />
+          <!-- <FontAwesomeIcon :icon="['fab', 'github']" class="my-auto" /> -->
           <h5>{{ repo.name }}</h5>
-          <FontAwesomeIcon
+          <!-- <FontAwesomeIcon
             :icon="['fas', 'external-link-alt']"
             class="my-auto"
-          />
+          /> -->
         </a>
       </div>
       <img class="border p-1" :src="repo.preview" />
@@ -32,9 +32,9 @@
           target="_blank"
           class="max-w-md flex justify-between"
         >
-          <FontAwesomeIcon icon="link" class="my-auto" />
+          <i class="fa fa-link"></i>
           <h5>{{ repo.home_url }}</h5>
-          <FontAwesomeIcon icon="external-link-alt" class="my-auto" />
+          <!-- <FontAwesomeIcon icon="external-link-alt" class="my-auto" /> -->
         </a>
       </div>
     </div>
@@ -44,14 +44,14 @@
 <script>
 // import { get } from "axios";
 
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+// import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
 // const repos = ["pmplusbud"];
 
 export default {
-  components: {
-    FontAwesomeIcon,
-  },
+  // components: {
+  //   FontAwesomeIcon,
+  // },
   data() {
     return {
       repos: [
