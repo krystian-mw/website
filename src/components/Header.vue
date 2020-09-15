@@ -25,8 +25,16 @@
             <router-link
               tag="a"
               :to="route.path"
-              class="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4F"
+              class="inline-block no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
             >{{ route.name }}</router-link>
+          </li>
+          <li
+            id="toggler"
+            @click="toggleLocale"
+            class="inline-block w-auto h-8 border-darkblue border"
+            :class="localeTogglerX ? 'flipped': ''"
+          >
+            <img src="../assets/localeToggler.svg" class="h-full" />
           </li>
         </ul>
       </div>
@@ -36,23 +44,51 @@
   </nav>
 </template>
 
+<style lang="scss">
+#toggler {
+  transition: all 0.5s;
+
+  &.flipped {
+    transform: scaleX(-1);
+  }
+}
+</style>
+
 <script>
+import $t from "../i18n";
+
 export default {
-  data() {
-    const { routes } = this.$router.options;
-    return {
-      routes,
-    };
-  },
+  data: () => ({
+    localeTogglerX: false,
+  }),
   computed: {
+    routes() {
+      const { routes } = this.$router.options;
+      let out = [];
+      routes.forEach((route) => {
+        out.push({
+          name: $t(route.name),
+          path: route.path,
+        });
+      });
+      return out;
+    },
     navOpen() {
       return this.$store.getters.navOpen;
     },
   },
   methods: {
+    $t,
+    flipLocaleTogglerX() {
+      this.localeTogglerX = this.localeTogglerX ? false : true;
+    },
+    toggleLocale() {
+      this.flipLocaleTogglerX();
+      this.$store.dispatch("toggleLocale");
+    },
     toggleNav() {
       this.$store.commit("toggleNav");
     },
-  },
+  }
 };
 </script>

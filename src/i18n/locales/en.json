@@ -1,5 +1,9 @@
 {
     "nav:home": "Home",
-    "nav:repos": "Repositeries",
-    "nav:contact": "Contact"
+    "nav:repos": "Repositories",
+    "nav:contact": "Contact",
+    "home:entry:name": "Krystian Mikolajczyk | mwebdesign.co.uk",
+    "home:entry:title": "Professional Websites & Services",
+    "home:entry:slogan": "Fast, modern & secure",
+    "home:hero:google": "Google Tools"
 }

@@ -5,6 +5,7 @@ export default createStore({
     darkMode: false,
     repos: [],
     navOpen: false,
+    locale: "pl",
   },
   mutations: {
     enableDark(state) {
@@ -14,10 +15,10 @@ export default createStore({
       state.darkMode = false;
     },
     toggleNav(state) {
-      state.navOpen = !state.navOpen
+      state.navOpen = !state.navOpen;
     },
-    closeNav (state) {
-      state.navOpen = false
+    closeNav(state) {
+      state.navOpen = false;
     },
     addRepo(state, repo) {
       for (let i = 0; i < state.repos.length; i++) {
@@ -29,6 +30,18 @@ export default createStore({
       }
       state.repos.push(repo);
     },
+    setLocale(state, locale) {
+      state.locale = locale;
+    },
+  },
+  actions: {
+    toggleLocale({commit}) {
+      const locale = this.state.locale === "en" ? "pl" : "en";
+      document.getElementsByTagName("html")[0].lang = locale
+      commit('setLocale', locale)
+      // Locale is located in nav so it'd be good to close it as well
+      commit('closeNav')
+    }
   },
   getters: {
     darkMode(state) {
@@ -37,9 +50,12 @@ export default createStore({
     repos(state) {
       return state.repos;
     },
-    navOpen (state) {
-      return state.navOpen
-    }
+    navOpen(state) {
+      return state.navOpen;
+    },
+    locale(state) {
+      return state.locale;
+    },
   },
   modules: {},
 });

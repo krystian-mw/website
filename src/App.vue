@@ -18,7 +18,7 @@ body {
 .gradient {
   background: $gradient;
 }
-i:focus {
+button:focus {
   outline: none;
 }
 </style>

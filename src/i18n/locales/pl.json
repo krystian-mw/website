@@ -1,5 +1,9 @@
 {
     "nav:home": "Strona Główna",
     "nav:repos": "Repozytaria",
-    "nav:contact": "Kontakt"
+    "nav:contact": "Kontakt",
+    "home:entry:name": "Krystian Mikołajczyk | mwebdesign.co.uk",
+    "home:entry:title": "Profesjonalne Strony Internetowe",
+    "home:entry:slogan": "Szybkie, nowoczesne i zabezpieczone",
+    "home:hero:google": "Narzędzia Google"
 }

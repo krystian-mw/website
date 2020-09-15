@@ -1,7 +1,6 @@
 {
-  "nav": {
-    "home": "",
-    "repos": "",
-    "contact": ""
-  }
+  "nav:home": "Home",
+  "nav:repos": "Repositories",
+  "nav:contact": "Contact",
+  "home:hero:google": "Google Tools"
 }
