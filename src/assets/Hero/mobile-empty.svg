@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="126.849 0 159.88 250.009" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style>.cls-1{fill:#fff;}.cls-1,.cls-2,.cls-3,.cls-4{stroke:#1d1d1b;stroke-miterlimit:10;}.cls-2,.cls-5{fill:#1d1d1b;}.cls-3,.cls-4{fill:#575756;}.cls-4{stroke-width:3px;}</style>
+  </defs>
+  <path class="cls-2" d="M 255.084 9.755 L 158.504 9.755 C 151.343 9.638 145.436 15.335 145.294 22.495 L 145.294 227.495 C 145.425 234.663 151.335 240.372 158.504 240.255 L 255.084 240.255 C 262.245 240.366 268.147 234.665 268.284 227.505 L 268.284 22.505 C 268.147 15.345 262.245 9.644 255.084 9.755 Z M 264.404 225.175 C 264.284 231.493 259.072 236.521 252.754 236.415 L 160.874 236.415 C 154.556 236.521 149.344 231.493 149.224 225.175 L 149.224 24.815 C 149.339 18.495 154.554 13.464 160.874 13.575 L 252.704 13.575 C 259.044 13.436 264.289 18.475 264.404 24.815 Z"/>
+  <rect x="172.8" y="10.8" width="65.5" height="7.2" style="fill: rgb(29, 29, 27);" bx:origin="0.5 0.513889"/>
+  <rect class="cls-2" x="172.774" y="10.845" width="65.54" height="14.43" rx="6.82" style="paint-order: fill; stroke-width: 0px;"/>
+  <ellipse class="cls-3" cx="187.584" cy="18.675" rx="2.37" ry="2.36"/>
+  <ellipse class="cls-3" cx="179.264" cy="18.525" rx="3.45" ry="3.44"/>
+  <rect class="cls-3" x="193.864" y="17.024" width="23.61" height="3" rx="1.5"/>
+  <ellipse class="cls-3" cx="227.434" cy="18.675" rx="2.37" ry="2.36"/>
+</svg>

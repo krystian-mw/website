@@ -1,5 +1,5 @@
 <template>
-  <nav id="header" class="fixed w-full z-30 top-0 bg-white text-darkblue">
+  <nav id="header" class="fixed w-full z-30 top-0 bg-white text-darkblue shadow-xl">
     <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
       <div class="pl-4 flex items-center">
         <a
@@ -47,7 +47,6 @@
 <style lang="scss">
 #toggler {
   transition: all 0.5s;
-
   &.flipped {
     transform: scaleX(-1);
   }
@@ -56,7 +55,6 @@
 
 <script>
 import $t from "../i18n";
-
 export default {
   data: () => ({
     localeTogglerX: false,

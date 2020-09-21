@@ -12,11 +12,13 @@ const routes = [
   },
   {
     path: "/repositories",
+    alias: "/repozytaria",
     name: "nav:repos",
     component: Repos,
   },
   {
-    path: "/kontakt",
+    path: "/contact",
+    alias: "/kontakt",
     name: "nav:contact",
     component: Contact,
   },

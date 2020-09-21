@@ -1,0 +1,11 @@
+--2020-09-21 12:31:13--  https://vectr.com/tmp/a32PAFf3bl/b3DZxYy6N.svg?width=2000
+Resolving vectr.com (vectr.com)... 54.236.74.205, 52.86.203.217, 54.164.48.176, ...
+Connecting to vectr.com (vectr.com)|54.236.74.205|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1025 (1.0K) [text/html]
+Saving to: ‘b3DZxYy6N.svg?width=2000’
+
+b3DZxYy6N.svg?width=2000   0%[                                   ]       0  --.-KB/s               b3DZxYy6N.svg?width=2000 100%[==================================>]   1.00K  --.-KB/s    in 0s      
+
+2020-09-21 12:31:13 (91.3 MB/s) - ‘b3DZxYy6N.svg?width=2000’ saved [1025/1025]
+
