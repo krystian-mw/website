@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import Repos from "../views/Repositories.vue";
 import Contact from "../views/Contact.vue";
+import Magia from "../views/Magia.vue";
 
 const routes = [
   {
@@ -21,6 +22,12 @@ const routes = [
     alias: "/kontakt",
     name: "nav:contact",
     component: Contact,
+  },
+  {
+    path: "/magia",
+    alias: "/magia",
+    name: "nav:magia",
+    component: Magia,
   },
 ];
 
