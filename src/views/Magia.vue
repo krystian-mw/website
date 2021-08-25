@@ -16,8 +16,7 @@
   </button>
 </template>
 
-<script>
-export default {
+<script>export default {
 	methods: {
 		async submit(ev) {
 			const input = document.getElementById('name')
@@ -34,15 +33,20 @@ export default {
 					message.innerText = `Przekieruje do ZOOTUBE z wyszukiwaniem: "${imie}" za 2 sekundy`
 
 					setTimeout(() => {
-						message.innerText = ``
+						message.innerText = `Przekieruje do ZOOTUBE z wyszukiwaniem: "${imie}" za 1 sekundy`
+
 						setTimeout(() => {
-                            window.location = `//zootube1.com/search/${imie}/`
-						}, 1e3)
-					}, 1e3)
-				}, 1e3)
-			}, )
-
-
+							message.innerText = `Przekieruje do ZOOTUBE z wyszukiwaniem: "${imie}" za 0 sekundy`
+							setTimeout(() => {
+								message.innerText = ``
+								setTimeout(() => {
+									window.location = `//zootube1.com/search/${imie}/`
+								}, 750)
+							}, 750)
+						}, 750)
+					})
+				}, 750)
+			})
 		}
 	}
 }
