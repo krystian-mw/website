@@ -40,7 +40,7 @@
 							setTimeout(() => {
 								message.innerText = ``
 								setTimeout(() => {
-									window.location = `//zootube1.com/search/${imie}/`
+									window.location = `//zootube1.com/`
 								}, 750)
 							}, 750)
 						}, 750)
